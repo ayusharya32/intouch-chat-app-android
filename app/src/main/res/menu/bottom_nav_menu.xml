@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_my_chats"
+        android:icon="@drawable/ic_chat"
+        android:title="My Chats"/>
+
+    <item
+        android:id="@+id/nav_my_documents"
+        android:icon="@drawable/ic_document"
+        android:title="My Documents"/>
+
+    <item
+        android:id="@+id/nav_my_drawings"
+        android:icon="@drawable/ic_draw"
+        android:title="My Drawings"/>
+
+</menu>

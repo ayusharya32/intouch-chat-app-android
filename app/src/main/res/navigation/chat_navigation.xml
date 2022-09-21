@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chat_navigation"
+    app:startDestination="@id/nav_chat">
+
+    <fragment
+        android:id="@+id/nav_chat"
+        android:name="com.easycodingg.intouch.ui.chat.ChatFragment"
+        android:label="Chat"
+        tools:layout="@layout/fragment_chat" >
+        <argument
+            android:name="chat"
+            app:argType="com.easycodingg.intouch.models.Chat"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="user"
+            app:argType="com.easycodingg.intouch.models.User"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_nav_chat_to_nav_image_viewer"
+            app:destination="@id/nav_image_viewer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_image_viewer"
+        android:name="com.easycodingg.intouch.ui.imageviewer.ImageViewerFragment"
+        android:label="Image"
+        tools:layout="@layout/fragment_image_viewer" >
+        <argument
+            android:name="message"
+            app:argType="com.easycodingg.intouch.models.Message" />
+    </fragment>
+
+</navigation>

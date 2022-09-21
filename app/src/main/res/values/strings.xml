@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">iN touch</string>
+
+    <string name="storage_permission_needed">To send media and files, allow in Touch app to access your device\'s photos, media and files.</string>
+    <string name="storage_permission_needed_after_permanent_denial">To send media and files, allow in Touch app to access your device\'s photos, media and files. Tap Settings > Permissions, and turn "Files and media" on.</string>
+</resources>
